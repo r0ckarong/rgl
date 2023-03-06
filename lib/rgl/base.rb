@@ -49,7 +49,7 @@ module RGL
         @source, @target = a, b
       end
 
-      # Two directed edges (u,v) and (x,y) are equal iff u == x and v == y. +eql?+
+      # Two directed edges (u,v) and (x,y) are equal if u == x and v == y. +eql?+
       # is needed when edges are inserted into a +Set+. +eql?+ is aliased to +==+.
       def eql?(edge)
         (source == edge.source) && (target == edge.target)
