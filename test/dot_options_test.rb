@@ -131,9 +131,8 @@ class TestDotOptions < Test::Unit::TestCase
       # graph.set_edge_options('EDGE_OPTS', opt, )
     end
 
-    # graph.set_edge_options('EDGE_OPTS', 'arrowhead', arrowhead: "empty")
 
-    # graph.set_edge_options('EDGE_OPTS', 'arrowhead', arrowhead:, label: "arrowhead: ") # default: normal; style of arrowhead at head end
+    # graph.set_edge_options('EDGE_OPTS', 'arrowhead', arrowhead: "empty") # default: normal; style of arrowhead at head end
     # graph.set_edge_options('EDGE_OPTS', 'arrowsize', arrowsize:, label: "arrowsize: ") # default: 1.0; scaling factor for arrowheads
     # graph.set_edge_options('EDGE_OPTS', 'arrowtail', arrowtail:, label: "arrowtail: ") # default: normal; style of arrowhead at tail end
     # graph.set_edge_options('EDGE_OPTS', 'color', color:, label: "color: ") # default: black; edge stroke color
@@ -155,7 +154,6 @@ class TestDotOptions < Test::Unit::TestCase
     # graph.set_edge_options('EDGE_OPTS', 'headport', headport:, label: "headport: ") # n,ne,e,se,s,sw,w,nw
     # graph.set_edge_options('EDGE_OPTS', 'headtarget', headtarget:, label: "headtarget: ") # if headURL is set, determines browser window for URL
     # graph.set_edge_options('EDGE_OPTS', 'headtooltip', headtooltip:, label: "headtooltip: ") # default: label; tooltip annotation near head of edge
-    # graph.set_edge_options('EDGE_OPTS', 'headlabel', headlabel:, label: "headlabel: ") # label placed near head of edge
     # graph.set_edge_options('EDGE_OPTS', 'headURL', headURL:, label: "headURL: ") # URL attached to head label if output format is ismap
     # graph.set_edge_options('EDGE_OPTS', 'href', href:, label: "href: ") # alias for URL
     # graph.set_edge_options('EDGE_OPTS', 'id', id:, label: "id: ") # any string (user-defined output object tags)
@@ -179,16 +177,13 @@ class TestDotOptions < Test::Unit::TestCase
     # graph.set_edge_options('EDGE_OPTS', 'sametail', sametail:, label: "sametail: ") # tag for tail node; edge tails with the same tag are merged onto the same port
     # graph.set_edge_options('EDGE_OPTS', 'style', style:, label: "style: ") # graphics options, e.g. bold, dotted, filled; cf. Section 2.3
     # graph.set_edge_options('EDGE_OPTS', 'taillabel', taillabel:, label: "taillabel: ") # label placed near tail of edge
-    # graph.set_edge_options('EDGE_OPTS', 'tailport', tailport:, label: "tailport: ") # n,ne,e,se,s,sw,w,nw
-    # graph.set_edge_options('EDGE_OPTS', 'tailURL', tailURL:, label: "tailURL: ") # URL attached to tail label if output format is ismap
     # graph.set_edge_options('EDGE_OPTS', 'weight', weight:, label: "weight: ") # default: 1; integer cost of stretching an edge
     # graph.set_edge_options('EDGE_OPTS', 'tailclip', tailclip:, label: "tailclip: ") # default: true; if false, edge is not clipped to tail node boundary
     # graph.set_edge_options('EDGE_OPTS', 'tailhref', tailhref:, label: "tailhref: ") # synonym for tailURL
-    # graph.set_edge_options('EDGE_OPTS', 'taillabel', taillabel:, label: "taillabel: ") # label placed near tail of edge
     # graph.set_edge_options('EDGE_OPTS', 'tailport', tailport:, label: "tailport: ") # n,ne,e,se,s,sw,w,nw
     # graph.set_edge_options('EDGE_OPTS', 'tailtarget', tailtarget:, label: "tailtarget: ") # if tailURL is set, determines browser window for URL
     # graph.set_edge_options('EDGE_OPTS', 'tailtooltip', tailtooltip:, label: "tailtooltip: ") # default: label; tooltip annotation near tail of edge
-    # graph.set_edge_options('EDGE_OPTS', 'tailURL', tailURL:, label: "tailURL: ") # URL attached to tail label
+    # graph.set_edge_options('EDGE_OPTS', 'tailURL', tailURL:, label: "tailURL: ") # URL attached to tail label if output format is ismap
     # graph.set_edge_options('EDGE_OPTS', 'target', target:, label: "target: ") # if URL is set, determines browser window for URL
     # graph.set_edge_options('EDGE_OPTS', 'tooltip', 'tooltip: label: "'tooltip ")
 
@@ -217,7 +212,6 @@ class TestDotOptions < Test::Unit::TestCase
       'headport' => get_edge_setting,
       'headtarget' => get_edge_setting,
       'headtooltip' => get_edge_setting,
-      'headlabel' => get_edge_setting,
       'headURL' => get_edge_setting,
       'href' => get_edge_setting,
       'id' => get_edge_setting,
@@ -240,9 +234,6 @@ class TestDotOptions < Test::Unit::TestCase
       'samehead' => get_edge_setting,
       'sametail' => get_edge_setting,
       'style' => get_edge_setting,
-      'taillabel' => get_edge_setting,
-      'tailport' => get_edge_setting,
-      'tailURL' => get_edge_setting,
       'weight' => get_edge_setting,
       'tailclip' => get_edge_setting,
       'tailhref' => get_edge_setting,
